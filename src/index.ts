@@ -1,5 +1,3 @@
-import * as path from "path";
-
 export function toVietnameseSlug(str: string, character = "-"): string {
   let slug = str.toLowerCase();
 
@@ -31,8 +29,8 @@ function makeid(length: number): string {
 }
 
 export function toSlugFile(fileName: string): string {
-  const parseFile = path.parse(fileName);
-  const extFile = parseFile.ext;
-  const newFileName = toVietnameseSlug(parseFile.name);
+  const parseFiles = fileName.split(".");
+  const extFile = "." + parseFiles[parseFiles.length - 1];
+  const newFileName = toVietnameseSlug(fileName.replace(extFile, ""));
   return newFileName + "-" + makeid(5) + extFile;
 }
