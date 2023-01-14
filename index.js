@@ -1,4 +1,4 @@
-function toVietnameseSlug(str) {
+function toVietnameseSlug(str, character = "-") {
   let slug = str.toLowerCase();
 
   slug = slug.replace(/á|à|ả|ạ|ã|ă|ắ|ằ|ẳ|ẵ|ặ|â|ấ|ầ|ẩ|ẫ|ậ/gi, "a");
@@ -10,8 +10,8 @@ function toVietnameseSlug(str) {
   slug = slug.replace(/đ/gi, "d");
   slug = slug.replace(/\`|\~|\!|\@|\#|\||\$|\%|\^|\&|\*|\(|\)|\+|\=|\,|\.|\/|\?|\>|\<|\'|\"|\:|\;|_/gi, "");
 
-  slug = slug.replace(/ /gi, "-");
-  slug = slug.replace(/\-+/gi, "-");
+  slug = slug.replace(/ /gi, character);
+  slug = slug.replace(/\-+/gi, character);
   slug = "@" + slug + "@";
   slug = slug.replace(/\@\-|\-\@|\@/gi, "");
 
