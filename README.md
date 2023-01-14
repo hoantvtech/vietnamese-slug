@@ -3,17 +3,17 @@
 ## Documentation
 ### Example
 ```javascript
-const toSlug = require("vietnamese-url");
+const { toVietnameseSlug } = require("vietnamese-url");
 const input = "Tiêu đề này được viết bằng tiếng    Việt   ";
-const output = toSlug(input);
+const output = toVietnameseSlug(input);
 console.log(output);
 // tieu-de-nay-duoc-viet-bang-tieng-viet
 ```
 ### Custom slug character
 ```sh
-const toSlug = require("vietnamese-url");
+const { toVietnameseSlug } = require("vietnamese-url");
 const input = "Tiêu đề này được viết bằng tiếng    Việt   ";
-const output = toSlug(input, "*");
+const output = toVietnameseSlug(input, "*");
 console.log(output);
 // tieu*de*nay*duoc*viet*bang*tieng*viet
 ```
@@ -27,6 +27,12 @@ console.log("slug: ", slug);
 ```
 
 ### ToSlugFile
+```javascript
+const { toSlugFile } = require("vietnamese-url");
+const slug = toSlugFile("Đường dẫn ảnh viết bằng tiếng    Việt   .jpg");
+console.log("slug: ", slug);
+// duong-dan-anh-viet-bang-tieng-viet-dr1kz.jpg
+```
 ```javascript
 import { toSlugFile } from "vietnamese-url";
 const slug = toSlugFile("Đường dẫn ảnh viết bằng tiếng    Việt   .jpg");
