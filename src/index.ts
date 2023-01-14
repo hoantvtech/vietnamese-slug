@@ -1,4 +1,4 @@
-export function toVietnameseSlug(str, character = "-") {
+export function toVietnameseSlug(str: string, character = "-"): string {
   let slug = str.toLowerCase();
 
   slug = slug.replace(/á|à|ả|ạ|ã|ă|ắ|ằ|ẳ|ẵ|ặ|â|ấ|ầ|ẩ|ẫ|ậ/gi, "a");
