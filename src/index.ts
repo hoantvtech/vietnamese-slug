@@ -30,6 +30,8 @@ function makeid(length: number): string {
 
 export function toSlugFile(fileName: string): string {
   const parseFiles = fileName.split(".");
+  if (parseFiles.length === 1) return toVietnameseSlug(fileName);
+
   const extFile = "." + parseFiles[parseFiles.length - 1];
   const newFileName = toVietnameseSlug(fileName.replace(extFile, ""));
   return newFileName + "-" + makeid(5) + extFile;
