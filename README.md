@@ -17,3 +17,11 @@ const output = toSlug(input, "*");
 console.log(output);
 // tieu*de*nay*duoc*viet*bang*tieng*viet
 ```
+
+### ES6
+```javascript
+import { toVietnameseSlug } from "vietnamese-url";
+const slug = toVietnameseSlug("Tiêu đề này được viết bằng tiếng    Việt   ");
+console.log("slug: ", slug);
+// tieu-de-nay-duoc-viet-bang-tieng-viet
+```
