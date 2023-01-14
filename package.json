@@ -1,6 +1,6 @@
 {
   "name": "vietnamese-url",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Package is used to convert Vietnamese string to unsigned letters",
   "main": "index.js",
   "scripts": {
