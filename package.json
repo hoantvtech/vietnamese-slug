@@ -1,10 +1,11 @@
 {
   "name": "vietnamese-url",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Package is used to convert Vietnamese string to unsigned letters",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist"
   },
   "keywords": [
     "vietnamese-slug",
@@ -21,5 +22,10 @@
   "bugs": {
     "url": "https://github.com/hoantvtech/vietnamese-slug/issues"
   },
-  "homepage": "https://github.com/hoantvtech/vietnamese-slug#readme"
+  "homepage": "https://github.com/hoantvtech/vietnamese-slug#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2"
+  }
 }
