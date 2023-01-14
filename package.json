@@ -1,12 +1,12 @@
 {
-  "name": "vietnamese-slug",
+  "name": "vietnamese-url",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["vietnamese-slug", "vietnamese", "slug"],
+  "keywords": ["vietnamese-slug", "vietnamese", "slug", "vietnamese-url"],
   "author": "",
   "license": "ISC"
 }
