@@ -17,6 +17,5 @@ function toVietnameseSlug(str, character = "-") {
 
   return slug;
 }
-console.log(toVietnameseSlug("Tiêu đề này được viết bằng tiếng    Việt   "));
 
 module.exports = toVietnameseSlug;
