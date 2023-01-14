@@ -1,5 +1,5 @@
 ## Vietnamese Slug
-- Package hỗ trợ chuyển đổi từ tiếng Việt có dấu sang dạng không dấu, hỗ trợ SEO, URL thân thiện, hỗ trợ chuyển đổi tên file sang định dạng thaan thiện.
+- Package hỗ trợ chuyển đổi từ tiếng Việt có dấu sang dạng không dấu, hỗ trợ SEO, URL thân thiện, hỗ trợ chuyển đổi tên file sang định dạng thân thiện.
 ## Documentation
 ### Example
 ```javascript
