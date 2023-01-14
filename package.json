@@ -1,12 +1,13 @@
 {
   "name": "vietnamese-url",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Package is used to convert Vietnamese string to unsigned letters",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": ["dist"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm run build && node dist/index",
     "build": "tsc",
     "prepare": "npm run build"
   },

@@ -1,5 +1,5 @@
 ## Vietnamese Slug
-- Package to convert Vietnamese string to slug.
+- Package hỗ trợ chuyển đổi từ tiếng Việt có dấu sang dạng không dấu, hỗ trợ SEO, URL thân thiện, hỗ trợ chuyển đổi tên file sang định dạng thaan thiện.
 ## Documentation
 ### Example
 ```javascript
@@ -24,4 +24,12 @@ import { toVietnameseSlug } from "vietnamese-url";
 const slug = toVietnameseSlug("Tiêu đề này được viết bằng tiếng    Việt   ");
 console.log("slug: ", slug);
 // tieu-de-nay-duoc-viet-bang-tieng-viet
+```
+
+### ToSlugFile
+```javascript
+import { toSlugFile } from "vietnamese-url";
+const slug = toSlugFile("Đường dẫn ảnh viết bằng tiếng    Việt   .jpg");
+console.log("slug: ", slug);
+// duong-dan-anh-viet-bang-tieng-viet-dr1kz.jpg
 ```

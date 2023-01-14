@@ -1,3 +1,5 @@
+import * as path from "path";
+
 export function toVietnameseSlug(str: string, character = "-"): string {
   let slug = str.toLowerCase();
 
@@ -16,4 +18,21 @@ export function toVietnameseSlug(str: string, character = "-"): string {
   slug = slug.replace(/\@\-|\-\@|\@/gi, "");
 
   return slug;
+}
+
+function makeid(length: number): string {
+  let result           = '';
+  const characters       = 'abcdefghijklmnopqrstuvwxyz0123456789';
+  const charactersLength = characters.length;
+  for ( let i = 0; i < length; i++ ) {
+      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+  }
+  return result;
+}
+
+export function toSlugFile(fileName: string): string {
+  const parseFile = path.parse(fileName);
+  const extFile = parseFile.ext;
+  const newFileName = toVietnameseSlug(parseFile.name);
+  return newFileName + "-" + makeid(5) + extFile;
 }
